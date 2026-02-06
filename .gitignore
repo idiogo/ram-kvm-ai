@@ -22,6 +22,7 @@ build/
 *.jpeg
 *.png
 !examples/*.jpg
+!docs/*.png
 
 # OS
 .DS_Store
