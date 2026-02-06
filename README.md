@@ -232,7 +232,7 @@ Unlike coordinate-based automation, RAM KVM AI uses **visual feedback** like a h
 | Personal, Educational, Open Source | AGPL-3.0 | Free |
 | Commercial, Closed-source | Commercial | [Pricing](https://gumroad.com/skynetpi) |
 
-📧 Commercial inquiries: **comercial@skynetpi.com**
+📧 Commercial inquiries: **skynetpi-commercial@idiogo.com.br**
 
 ## Credits
 
