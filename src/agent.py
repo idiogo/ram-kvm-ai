@@ -177,7 +177,8 @@ class Agent:
                  screen_resolution: Tuple[int, int] = (1920, 1080),
                  move_speed: int = 40,
                  capture_delay: float = 0.3,
-                 max_iterations: int = 50):
+                 max_iterations: int = 50,
+                 viewer: 'Viewer' = None):
         
         self.vision = vision
         self.keyboard = keyboard or Keyboard()
@@ -187,11 +188,13 @@ class Agent:
         self.move_speed = move_speed
         self.capture_delay = capture_delay
         self.max_iterations = max_iterations
+        self.viewer = viewer
         
         # State tracking
         self.iteration = 0
         self.history: List[ScreenAnalysis] = []
         self.estimated_cursor: Optional[Point] = None
+        self._last_capture_b64: Optional[str] = None
     
     def capture(self) -> str:
         """Capture screen and return base64 image."""
@@ -273,6 +276,7 @@ class Agent:
             # 1. Capture screen
             try:
                 image_b64 = self.capture()
+                self._last_capture_b64 = image_b64
             except Exception as e:
                 return {
                     'success': False,
@@ -300,6 +304,25 @@ class Agent:
                 self.estimated_cursor = analysis.cursor_position
             
             action_taken = analysis.suggested_action
+            
+            # Update viewer if available
+            if self.viewer and self._last_capture_b64:
+                cursor = None
+                target = None
+                if analysis.cursor_position:
+                    cursor = (analysis.cursor_position.x, analysis.cursor_position.y)
+                if analysis.target_position:
+                    target = (analysis.target_position.x, analysis.target_position.y)
+                
+                self.viewer.update_from_base64(
+                    self._last_capture_b64,
+                    iteration=self.iteration,
+                    action=action_taken,
+                    target_description=analysis.target_description,
+                    cursor_pos=cursor,
+                    target_pos=target,
+                    confidence=analysis.confidence
+                )
             
             # 3. Execute suggested action
             if analysis.suggested_action == 'done':
