@@ -1,0 +1,10 @@
+# RAM KVM AI Dependencies
+
+# Vision API (choose one)
+anthropic>=0.18.0  # Claude API
+# openai>=1.0.0    # GPT-4V API (alternative)
+
+# Optional: Local vision models
+# transformers>=4.36.0
+# torch>=2.0.0
+# pillow>=10.0.0
