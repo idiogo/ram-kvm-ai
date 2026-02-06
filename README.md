@@ -225,7 +225,14 @@ Unlike coordinate-based automation, RAM KVM AI uses **visual feedback** like a h
 
 ## License
 
-MIT
+**Dual Licensed:**
+
+| Use Case | License | Cost |
+|----------|---------|------|
+| Personal, Educational, Open Source | AGPL-3.0 | Free |
+| Commercial, Closed-source | Commercial | [Pricing](https://gumroad.com/skynetpi) |
+
+📧 Commercial inquiries: **comercial@skynetpi.com**
 
 ## Credits
 
