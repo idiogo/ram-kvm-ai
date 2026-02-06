@@ -230,9 +230,14 @@ Unlike coordinate-based automation, RAM KVM AI uses **visual feedback** like a h
 | Use Case | License | Cost |
 |----------|---------|------|
 | Personal, Educational, Open Source | AGPL-3.0 | Free |
-| Commercial, Closed-source | Commercial | [Pricing](https://gumroad.com/skynetpi) |
+| Commercial, Closed-source | [Commercial License](https://idiogo.gumroad.com/l/skynetpi) | $999 |
 
-📧 Commercial inquiries: **skynetpi-commercial@idiogo.com.br**
+**The commercial license covers the entire SkynetPi project**, including:
+- [skynetpi-bootstrap](https://github.com/idiogo/skynetpi-bootstrap) (setup + config)
+- ram-kvm-ai (this repo)
+
+🛒 **Purchase:** [idiogo.gumroad.com/l/skynetpi](https://idiogo.gumroad.com/l/skynetpi)
+📧 **Questions:** skynetpi-commercial@idiogo.com.br
 
 ## Credits
 

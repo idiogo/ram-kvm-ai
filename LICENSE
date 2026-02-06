@@ -671,7 +671,11 @@ AGPL obligations. The commercial license allows you to:
 - Deploy commercially without publishing source code
 - Receive priority support
 
-For commercial licensing, visit: https://gumroad.com/skynetpi
-Or contact: skynetpi-commercial@idiogo.com.br
+The commercial license covers the entire SkynetPi project, including:
+- skynetpi-bootstrap (https://github.com/idiogo/skynetpi-bootstrap)
+- ram-kvm-ai
+
+Purchase: https://idiogo.gumroad.com/l/skynetpi ($999)
+Contact: skynetpi-commercial@idiogo.com.br
 
 Copyright (c) 2026 Diogo Carneiro
