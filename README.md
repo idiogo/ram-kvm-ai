@@ -1,6 +1,22 @@
-# RAM KVM AI 🤖
+<div align="center">
 
-Autonomous computer control via Raspberry Pi + USB HID + HDMI Capture + AI Vision.
+<img src="docs/hero.png" alt="RAM KVM AI" width="800">
+
+# 🎮 RAM KVM AI
+
+### The Visual Control Engine for SkynetPi
+
+*Autonomous computer control via Raspberry Pi + USB HID + HDMI Capture + AI Vision*
+
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](LICENSE)
+[![Commercial License](https://img.shields.io/badge/Commercial-$999-green.svg)](https://idiogo.gumroad.com/l/skynetpi)
+[![Part of SkynetPi](https://img.shields.io/badge/Part%20of-SkynetPi-purple.svg)](https://github.com/idiogo/skynetpi-bootstrap)
+
+[How It Works](#-how-it-works) • [Hardware](#hardware-requirements) • [Setup](#software-setup) • [Usage](#usage) • [License](#license)
+
+</div>
+
+---
 
 **Control any computer or smartphone like a human would — by looking at the screen and using keyboard/mouse.**
 
