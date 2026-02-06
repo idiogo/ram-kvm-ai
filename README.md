@@ -1,4 +1,4 @@
-# PiKVM Agent 🤖
+# RAM KVM AI 🤖
 
 Autonomous computer control via Raspberry Pi + USB HID + HDMI Capture + AI Vision.
 
